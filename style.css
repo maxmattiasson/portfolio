@@ -1,0 +1,148 @@
+:root {
+    /* COLORS */
+    --bg: #f8fafc;
+    --surface: #e2e8f0;
+    --text: #1e293b;
+    --muted-text: #64748b;
+    --accent: #3b82f6;  
+    --hover: #2563eb;    
+    --muted: #334155;    
+    --highlight: #bae6fd; 
+    /* TEXT */
+    --text-sm: 0.875rem;
+    --text-md: 1rem;
+    --text-lg: 1.25rem;
+    --text-xl: 1.5rem;    
+    --font: 'Inter', 'sans serif';
+    /* SPACING */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+    --space-xl: 4rem;    
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    background-color: var(--highlight);
+    padding: var(--space-md);
+    position: sticky;
+    top: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e2e8f0;
+
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--muted-text);
+    background-color: #1f2933;
+    padding: var(--space-sm);
+    border-radius: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+section {
+    background-color: #e2e8f0;
+    text-align: center;
+    padding: var(--space-md);
+    scroll-margin-top: 80px;
+}
+
+.project-img {
+    max-width: 15vw;
+    aspect-ratio: 3 / 2;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    text-align: center;
+    gap: var(--space-md);
+    max-width: 50vw;
+}
+.project-cont {
+    display: flex;
+}
+
+.cont-right {
+    text-align: start;
+    padding: var(--space-md);
+    margin-top: var(--space-md);
+}
+
+h3 {
+    padding: var(--space-sm);
+}
+
+.work, 
+.school {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hide {
+    opacity: 0;
+}
+.filters {
+    padding: var(--space-md);
+}
+.year {
+    font-size: var(--text-lg);
+}
+.sub-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#framtid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cont {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    overflow-x: scroll;
+}
+.places {
+    min-width: 100px;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Max Mattiasson</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Max Mattiasson</h1>
+        <nav>
+            <a href="#om">Om mig</a>
+            <a href="#projekt">Projekt</a>
+            <a href="#erfarenheter">Erfarenheter</a>
+            <a href="#framtid">Framtiden</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="om">
+        <h2>Om mig</h2>
+            <p>Redo för utmaning och fågelspaning</p>
+            <ul>
+                <li>Sports - Football and pingpong</li>
+                <li>Working out - Mostly running</li>
+                <li>Music - I like to play the guitar</li>
+                <li>Silly little hobbies like chess and such</li>
+            </ul>   
+            <div class="quote">Kissa inte i motvind <br>- Allmänt vedertaget</div>
+        </section>
+        <section id="projekt">
+        <h2>Projekt</h2>
+            <div class="project-cont">
+                <div class="cont-left">
+                    <h3>Lolgiss</h3>
+                    <a href="https://lolgiss.com" target="_blank" rel="noopener noreferrer">
+                    <img src="images/lolgiss.png" alt="loldle type game" class="project-img">
+                    </a>
+                </div>
+                <div class="cont-right">
+                    <p class="desc">En variant av Wordle/Loldle där du ska gissa rätt gubbe med hjälp av ledtrådar</p>
+                    <p class="frontend"><strong>Frontend:</strong> HTML, CSS, Vanilla Javascript.</p>
+                    <p class="backend"><strong>Backend:</strong> Express, MongoDB,, bcrypt, jwt </p>
+                    <p class="hosted">Hosted: Netlify och render med egen domän</p>
+                </div>
+            </div>
+            <div class="project-cont">
+                <div class="cont-left">
+                    <h3>Väcka vikarie</h3>
+                    <a href="https://whackarim.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/whackarim.png" alt="whack-a-mole" class="project-img">
+                    </a>
+                </div>
+                <div class="cont-right">
+                    <p class="desc"></p>
+                    <p class="frontend"><strong>Frontend:</strong> HTML, CSS, Vanilla Javascript.</p>
+                    <p class="backend"><strong>Backend:</strong>Only MongoDB for leaderboard</p>
+                    <p class="hosted">Hosted: Vercel</p>
+                </div>
+            </div>
+            <div class="project-cont">
+                <div class="cont-left">
+                    <h3>LF Airlines</h3>
+                    <a href="https://maxmattiasson.github.io" target="_blank" rel="noopener noreferrer">
+                    <img src="images/lfairlines.png" alt="mock airlines site" class="project-img">
+                    </a>
+                </div>
+                <div class="cont-right">
+                <p class="desc">Fake sida för charterresa. Skapad för att deltagare på en fest skulle veta vilket tema/resemål de hade.</p>
+                <p class="frontend"><strong>Frontend:</strong> HTML, CSS, Vanilla Javascript.</p>
+                <p class="backend"><strong>Backend:</strong>Only Firebase for leaderboard</p>
+                <p class="hosted">Hosted: Netlify med egen domän. </p>
+            </div>
+            </section>
+        <section id="erfarenheter">
+        <h2>Erfarenheter</h2>
+            <div class="filters">
+                <label>
+                <input type="checkbox" id="toggle-work" checked>💼 Visa jobb
+                </label>
+                <label>
+                <input type="checkbox" id="toggle-school" checked>🎓 Visa utbildning
+                </label>
+                <label>
+                <input type="checkbox" id="toggle-details" checked>💬 Visa detaljer
+                </label>                
+            </div>
+        <div class="grid">
+            <div class="school year">2025 -</div>
+            <div class="school"><h3>👨‍🎓 Chas Academy</h3><p class="sub-title">Fullstack JavaScript</p><p class="details">Utbildning i frontend och backend med ramverk som React</p></div>
+            <div class="work year">2022</div>
+            <div class="work"><h3>💼 LF Jämtland</h3><p class="sub-title">Försäkringsrådgivare</p><p class="details">Rådgivning och försäljning av försäkringsprodukter med mycket kundkontakt</p></div>
+            <div class="work year">2021</div>
+            <div class="work"><h3>💼 Iron Mountain</h3><p class="sub-title">Dokumenthantering / Arkiv</p><p class="details">Hantering av dokument och organisering av arkiv</p></div>
+            <div class="school year">2018</div>
+            <div class="school"><h3>👨‍🎓 Linköpings universitet</h3><p class="sub-title">Ekonomi</p><p class="details">150hp av kurser med inriktning mot företagsekonomi och redovisning</p></div>
+        </div>
+        </section>
+
+        <section id="framtid">
+        <h2>Framtiden</h2>
+            
+            <p>Min dröm är att effektivt kunna skapa plattformar som människor finner värde i och som bidrar positivt till människors liv</p>
+            <p>En yrkesroll där jag i ett team kan bygga </p>
+
+            <div class="cont">
+                <div class="places">Internetmedia <p>En plats nära mig där min resa kan börja</p></div>
+                <div class="places">Knowit</div>
+                <div class="places">Sogeti</div>
+                <div class="places">Startups</div>
+            </div>
+            
+
+        </section>
+    </main>
+
+    <footer>
+        svgs icons for socials
+    </footer>
+</body>
+</html>
