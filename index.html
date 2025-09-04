@@ -12,7 +12,6 @@
 </head>
 <body>
     <header>
-        <h1>Max Mattiasson</h1>
         <nav>
             <a href="#om">Om mig</a>
             <a href="#projekt">Projekt</a>
@@ -23,6 +22,12 @@
     
     <main>
         <section id="om">
+            <div class="om-left">
+                <h1>Max Mattiasson</h1>
+                <p><span>Blivande</span> Utvecklare i Fullstack Javascript</p>
+            </div>
+            <div class="om-spacer"></div>
+            <div class="om-right">
         <h2>Om mig</h2>
             <p>Redo för utmaning och fågelspaning</p>
             <ul>
@@ -32,6 +37,7 @@
                 <li>Silly little hobbies like chess and such</li>
             </ul>   
             <div class="quote">Kissa inte i motvind <br>- Allmänt vedertaget</div>
+            </div>
         </section>
         <section id="projekt">
         <h2>Projekt</h2>
@@ -92,7 +98,7 @@
             </div>
         <div class="grid">
             <div class="school year">2025 -</div>
-            <div class="school"><h3>👨‍🎓 Chas Academy</h3><p class="sub-title">Fullstack JavaScript</p><p class="details">Utbildning i frontend och backend med ramverk som React</p></div>
+            <div class="school"><h3>👨‍🎓 Chas Academy</h3><p class="sub-title">Fullstack JavaScript</p><p class="details">Utbildning i frontend, backend och relaterade ramverk</p></div>
             <div class="work year">2022</div>
             <div class="work"><h3>💼 LF Jämtland</h3><p class="sub-title">Försäkringsrådgivare</p><p class="details">Rådgivning och försäljning av försäkringsprodukter med mycket kundkontakt</p></div>
             <div class="work year">2021</div>
@@ -105,16 +111,19 @@
         <section id="framtid">
         <h2>Framtiden</h2>
             
-            <p>Min dröm är att effektivt kunna skapa plattformar som människor finner värde i och som bidrar positivt till människors liv</p>
-            <p>En yrkesroll där jag i ett team kan bygga </p>
+            <p>Min dröm är att effektivt kunna producera plattformar som skapar värde och som bidrar positivt till människors liv</p>
+            <p>Drömyrket är en plats där jag i team bygger framtidens digitala lösningar </p>
+            <p>Kanske blir det i något av företagen nedan?</p>
 
-            <div class="cont">
-                <div class="places">Internetmedia <p>En plats nära mig där min resa kan börja</p></div>
-                <div class="places">Knowit</div>
-                <div class="places">Sogeti</div>
-                <div class="places">Startups</div>
+            <div class="card-cont">
+                <button id="card-btn-left">⬅️</button>
+                    <div class="card">
+                        <h3 id="company"></h4>
+                        <p id="card-desc"></p>
+                        <p id="card-city"></p>
+                    </div>
+                <button id="card-btn-right">➡️</button>
             </div>
-            
 
         </section>
     </main>
