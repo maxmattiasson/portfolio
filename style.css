@@ -32,7 +32,7 @@ html {
 }
 
 body {
-    background-color: var(--bg);
+    background-color: #e2e8f0;
     color: var(--text);
     font-family: var(--font);
 }
@@ -84,7 +84,10 @@ section {
     padding: var(--space-md);
     scroll-margin-top: 80px;
 }
-
+label,
+input{
+    cursor: pointer;
+}
 #om {
     display: flex;
     flex-direction: row;
@@ -158,14 +161,52 @@ input {
 }
 
 .card {
-    height: clamp(200px, 20vh, 500px);
-    width: clamp(200px, 20vw, 500px);
-    border: 2px solid black;
-
+    height: clamp(200px, 30vh, 500px);
+    width: clamp(200px, 30vw, 500px);
+    box-shadow: 2px 2px 10px 0px rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #afb5bc;
+    margin-top: 20px;
 }
 #card-btn-left,
 #card-btn-right {
     height: 40px;
     width: 40px;
     font-size: var(--text-xl);
+    border-radius: 10px;
+    background-color: var(--accent);
+    cursor: pointer;
+}   
+#card-city  {
+    margin-top: auto;
+    padding: 20px;
+}
+#card-desc{
+    padding: 10px;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+    .card {
+    font-size: 14px;
+  }
+}
+
+/*
+    Supersmå mobiler
+*/
+
+@media (max-width: 600px) {
+  .card {
+    font-size: 12px;
+  }
+  a {
+    font-size: 12px;
+    padding: 5px;
+  }
 }
