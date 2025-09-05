@@ -97,7 +97,12 @@ input{
 .om-spacer {
     width: 5vw;
 }
-
+#projekt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 80vw;
+}
 .project-img {
     max-width: 15vw;
     aspect-ratio: 3 / 2;
@@ -120,6 +125,9 @@ input {
 .cont-right {
     text-align: start;
     padding: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .work, 
@@ -137,6 +145,9 @@ input {
 }
 .filters {
     padding: var(--space-md);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;   
 }
 
 .year {
@@ -194,6 +205,13 @@ input {
 @media (max-width: 1024px) {
     .card {
     font-size: 14px;
+  }
+  #projekt {
+    max-width: 100%;
+  }
+  .project-cont {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
