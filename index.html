@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -22,21 +21,41 @@
     
     <main>
         <section id="om">
+            <div class="hero">
             <div class="om-left">
+                <img class="profilbild" src="images/MaxMattiasson.png" alt="En bild på mig">
                 <h1>Max Mattiasson</h1>
-                <p><span>Blivande</span> Utvecklare i Fullstack Javascript</p>
-            </div>
-            <div class="om-spacer"></div>
+                    <p><span>Blivande</span> fullstack JavaScript-utvecklare</p>
+                    <div class="weather">
+                        <p>Jag kommer från Östersund och där är det alltid fint väder, eller? </p>
+                        <div class="weather-content"></div>
+                    </div>
+                                    <figure>
+                    <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/20I6sIOMTCkB6w7ryavxtO?utm_source=generator&theme=0"
+                    width="100%" height="100" frameborder="0"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy" title="Spotify player: låt från min spellista"></iframe>
+                    <figcaption></figcaption>
+                </figure>
+                </div>
             <div class="om-right">
-        <h2>Om mig</h2>
-            <p>Redo för utmaning och fågelspaning</p>
+        
+            <div class="bubble">
+                <h2>Om mig</h2>
+                <p> När jag inte sitter framför datorn hittar du mig i en korpenmatch, ute på en löptur 
+                    eller med en gitarr i handen.
+                Jag har bott på flera olika platser i landet och trivs med att anpassa mig till nya miljöer och utmaningar. 
+                Jag drivs av att lära mig nya saker och bygga projekt som kombinerar kreativitet och problemlösning.</p>
+            </div>
             <ul>
-                <li>Sports - Football and pingpong</li>
-                <li>Working out - Mostly running</li>
-                <li>Music - I like to play the guitar</li>
-                <li>Silly little hobbies like chess and such</li>
+                <h3>Intressen</h3>
+                <li>⚽ Bollsport - Främst fotboll och pingis</li>
+                <li>🏃‍♂️‍➡️ Löpning - Tränar regelbundet (när kroppen håller) och jagar nya personbästa</li>
+                <li>💻 Webbutveckling - Lära mig nya tekniker och bygga nya saker</li>
+                <li>🎵 Musik - både att lyssna och spela själv på hobbynivå</li>
             </ul>   
-            <div class="quote">Kissa inte i motvind <br>- Allmänt vedertaget</div>
+            </div>
             </div>
         </section>
         <section id="projekt">
@@ -50,14 +69,14 @@
                 </div>
                 <div class="cont-right">
                     <p class="desc">Loldle/Worlde-klon där du ska försöka gissa rätt varje dag, med inloggning, leaderboard och statistik</p>
-                    <div class="stack-cont"><strong>Stack:</strong> 
+                    <div class="stack-cont">
                         <span class="stack">HTML</span> 
                         <span class="stack">CSS</span>
                         <span class="stack">JavaScript</span>
                         <span class="stack">Node.js</span>
                         <span class="stack">Express</span>
                         <span class="stack">MongoDB</span></div>
-                    <div class="tools-cont"><strong>Tools:</strong>
+                    <div class="tools-cont">
                         <span class="tools">JWT</span>
                         <span class="tools">bcrypt</span>
                         <span class="tools">Mongoose</span>
@@ -74,14 +93,14 @@
                 </div>
                 <div class="cont-right">
                     <p class="desc">Ett snabbt whack-a-mole spel med egna bilder, ljud, high scores sparade lokalt, och en leaderboard för att tävla med vänner</p>
-                    <div class="stack-cont"><strong>Stack:</strong> 
+                    <div class="stack-cont"> 
                         <span class="stack">HTML</span> 
                         <span class="stack">CSS</span>
                         <span class="stack">JavaScript</span>
                         <span class="stack">Node.js</span>
                         <span class="stack">Express</span>
                         <span class="stack">MongoDB</span></div> 
-                    <div class="tools-cont"><strong>Tools:</strong>
+                    <div class="tools-cont">
                         <span class="tools">Render</span>
                         <span class="tools">Vercel</span>
                         <span class="tools">Mongoose</span>
@@ -96,14 +115,13 @@
                     </a>
                 </div>
                 <div class="cont-right">
-                <p class="desc">Ett design- och branding-experiment i form av en låtsas-flygbolagssida. 
-                    Skapad för att ge extra glans och underhållning till en fest.
+                <p class="desc">En låtsas-flygbolagssida skapad för att ge extra glans och underhållning till en fest.
                     Med det här projektet började jag på riktigt utforska webbutveckling och allt man kan skapa.</p>
-                <div class="stack-cont"><strong>Stack:</strong> 
+                <div class="stack-cont"> 
                         <span class="stack">HTML</span> 
                         <span class="stack">CSS</span>
                         <span class="stack">JavaScript</span></div> 
-                <div class="tools-cont"><strong>Tools:</strong>
+                <div class="tools-cont">
                         <span class="tools">Firebase</span>
                         <span class="tools">Github Pages</span>
                         </div>
@@ -136,12 +154,13 @@
         </section>
 
         <section id="framtid">
-        <h2>Framtiden</h2>
-            
-            <p>Min dröm är att effektivt kunna producera plattformar som skapar värde och som bidrar positivt till människors liv</p>
-            <p>Drömyrket är en plats där jag i team bygger framtidens digitala lösningar </p>
-            <p>Kanske blir det i något av företagen nedan?</p>
-
+        
+            <h2>Framtiden</h2>
+            <div class="triangle">
+            <p class="t-framtid">Min dröm är att effektivt kunna producera plattformar som skapar värde och som bidrar positivt till människors liv</p>
+            <p class="t-framtid">Drömyrket är en plats där jag i team bygger framtidens digitala lösningar </p>
+            <p class="t-framtid">Kanske blir det i något av företagen nedan?</p>
+        </div>
             <div class="card-cont">
                 <button id="card-btn-left">⬅️</button>
                     <div class="card">
@@ -156,7 +175,13 @@
     </main>
 
     <footer>
-        svgs icons for socials
+          <p>Max Mattiasson</p>
+        <nav class="footer-links">
+            <a href="mailto:max@mattiasson.com">Email</a>
+            <a href="https://github.com/maxmattiasson" target="_blank">GitHub</a>
+        </nav>
     </footer>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -6,6 +6,7 @@ const schoolEl = document.querySelectorAll('.school');
 const detailEl = document.querySelectorAll('.details');
 const buttonRight = document.getElementById('card-btn-right');
 const buttonLeft = document.getElementById('card-btn-left');
+const KEY = window.CONFIG.WEATHER_API_KEY;
 
 let currentCompany = 0;
 
@@ -16,6 +17,22 @@ const content = [
     {company: "Startups", desc: "Snabba produktteam där man med stort ansvar kan bygga end-to-end i JS/TS", city: "🏢 Överallt"},
 ]
 
+async function getWeatherData() {
+  const lat = 63.1792;
+  const lon = 14.63566;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${KEY}&units=metric`
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {console.log(`${response.status}`)}
+
+    const res = await response.json();
+    console.log(res);
+  }
+  catch (error) {
+    console.error(error.message)
+  }
+}
+getWeatherData();
 displayContent();
 
 function toggleWork (){
