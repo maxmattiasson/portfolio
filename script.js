@@ -6,9 +6,14 @@ const schoolEl = document.querySelectorAll('.school');
 const detailEl = document.querySelectorAll('.details');
 const buttonRight = document.getElementById('card-btn-right');
 const buttonLeft = document.getElementById('card-btn-left');
+const weatherCont = document.querySelector('.weather-content');
+const contactBtn = document.querySelector('.call-me');
+const contactClose = document.getElementById('contact-close');
+const contactDialog = document.getElementById('contact');
 const KEY = window.CONFIG.WEATHER_API_KEY;
 
 let currentCompany = 0;
+
 
 const content = [
     {company: "Cygni", desc: "Konsultbolag med stark utvecklarkultur. Uppdrag i modern JS/TS (React/Node) och mycket fokus på kompetensutveckling", city: "🏢 Östersund"},
@@ -16,6 +21,7 @@ const content = [
     {company: "CGI", desc: "Globalt IT-bolag med samhällsnyttiga projekt. Agila team och frontend i JavaScript", city: "🏢 Östersund/Sundsvall"},
     {company: "Startups", desc: "Snabba produktteam där man med stort ansvar kan bygga end-to-end i JS/TS", city: "🏢 Överallt"},
 ]
+getWeatherData();
 
 async function getWeatherData() {
   const lat = 63.1792;
@@ -26,13 +32,24 @@ async function getWeatherData() {
     if (!response.ok) {console.log(`${response.status}`)}
 
     const res = await response.json();
-    console.log(res);
+
+    const temp = Math.round(res.main.temp);
+    const weather = res.weather[0].main;
+    const desc = res.weather[0].description;
+    const icon = res.weather[0].icon;
+
+    const iconUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+    const img = document.createElement('img');
+    img.src = iconUrl;
+    img.alt = desc;
+
+    weatherCont.textContent = `Just nu: Östersund ${temp}°C, ${weather}: ${desc}`
+    weatherCont.prepend(img);
   }
   catch (error) {
     console.error(error.message)
   }
 }
-getWeatherData();
 displayContent();
 
 function toggleWork (){
@@ -76,5 +93,22 @@ buttonLeft.addEventListener('click', () => {
     displayContent();
 })
 
+contactBtn.addEventListener('click', () => {
+  contactDialog.showModal();
+});
 
+contactClose.addEventListener('click', () => {
+  contactDialog.close();
+});
 
+contactDialog.addEventListener('click', e => {
+  const rect = contactDialog.getBoundingClientRect();
+  if (
+    e.clientX < rect.left ||
+    e.clientX > rect.right ||
+    e.clientY < rect.top ||
+    e.clientY > rect.bottom
+  ) {
+    contactDialog.close();
+  }
+});
