@@ -10,7 +10,7 @@ const weatherCont = document.querySelector('.weather-content');
 const contactBtn = document.querySelector('.call-me');
 const contactClose = document.getElementById('contact-close');
 const contactDialog = document.getElementById('contact');
-const KEY = window.CONFIG.WEATHER_API_KEY;
+const KEY = b2024be8c564ed764512c35c213e201c;
 
 let currentCompany = 0;
 
